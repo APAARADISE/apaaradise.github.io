@@ -10,10 +10,10 @@
 <script>
 var start = Date.now();
 
-// Try opening YouTube app
-location.href = "vnd.youtube://@apaaradise";
+// Open YouTube app directly to your CHANNEL (most reliable)
+location.href = "vnd.youtube://www.youtube.com/channel/UCe5VFSPuUCfVYJp6qWyMnAA";
 
-// Fallback only if app did NOT open
+// Fallback to browser if app does not open
 setTimeout(function () {
   if (Date.now() - start < 1500) {
     window.location.href = "https://www.youtube.com/@apaaradise";
